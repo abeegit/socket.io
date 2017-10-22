@@ -1,0 +1,31 @@
+{
+  "name": "socket.io",
+  "version": "1.0.0",
+  "description": "Learn socket.io",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/abeegit/socket.io.git"
+  },
+  "author": "Abhijeet Kumar (abhijeetkumar_1992@yahoo.in)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abeegit/socket.io/issues"
+  },
+  "homepage": "https://github.com/abeegit/socket.io#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "prettier": "^1.7.4"
+  },
+  "lint-staged": {
+    "*.{js,json,css}": ["prettier --write --tab-width 2", "git add"]
+  }
+}
